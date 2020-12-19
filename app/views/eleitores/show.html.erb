@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @eleitore.nome %>
+</p>
+
+<p>
+  <strong>String,:</strong>
+  <%= @eleitore.string, %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @eleitore.titulo %>
+</p>
+
+<p>
+  <strong>String:</strong>
+  <%= @eleitore.string %>
+</p>
+
+<%= link_to 'Edit', edit_eleitore_path(@eleitore) %> |
+<%= link_to 'Back', eleitores_path %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Eleitor:</strong>
+  <%= @voto.eleitor_id %>
+</p>
+
+<p>
+  <strong>Int:</strong>
+  <%= @voto.int %>
+</p>
+
+<p>
+  <strong>References,:</strong>
+  <%= @voto.references, %>
+</p>
+
+<p>
+  <strong>Candidato:</strong>
+  <%= @voto.candidato_id %>
+</p>
+
+<p>
+  <strong>Int:</strong>
+  <%= @voto.int %>
+</p>
+
+<p>
+  <strong>References:</strong>
+  <%= @voto.references %>
+</p>
+
+<%= link_to 'Edit', edit_voto_path(@voto) %> |
+<%= link_to 'Back', votos_path %>

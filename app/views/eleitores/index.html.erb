@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Eleitores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>String,</th>
+      <th>Titulo</th>
+      <th>String</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @eleitores.each do |eleitore| %>
+      <tr>
+        <td><%= eleitore.nome %></td>
+        <td><%= eleitore.string, %></td>
+        <td><%= eleitore.titulo %></td>
+        <td><%= eleitore.string %></td>
+        <td><%= link_to 'Show', eleitore %></td>
+        <td><%= link_to 'Edit', edit_eleitore_path(eleitore) %></td>
+        <td><%= link_to 'Destroy', eleitore, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Eleitore', new_eleitore_path %>

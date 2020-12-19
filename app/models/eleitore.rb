@@ -1,0 +1,2 @@
+class Eleitore < ApplicationRecord
+end
